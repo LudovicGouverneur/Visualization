@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML5 Canvas</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div style="height:200"> <p> Position of the last click in context referential </p> </div>
+    <div style="padding-left: 20px"> 
+        <form > 
+            Last click : X coordinate </br> <input type="number" name='positionX' value="0" id="positionX"  /> </br> 
+            Last click : Y coordinate </br> <input type="number" name='positionY' value="0" id="positionY" /> </br></br></br>
+        </form>
+
+    </div>
+
+    <div style="padding-left: 20px"> -
+        <form > 
+            Line width parameter : min width <br> <input type="number" name="thinerWidth" value="10" id="thinerWidth" /> </br> </br>
+            Line width parameter : max width <br> <input type="number" name="largestWidth" value="20" id="largestWidth" /> </br> 
+            <input type="button" name ="update_line_width" value ="update" id="btn_update_line_width"> </br></br>
+            <!-- Y <input type="number" name='positionY' value="0" id="positionY" /> </br> -->
+            <!-- <input type="number" name='positionX' id ="positionX"></input> -->
+        </form></div>
+    
+    
+    
+    <div style="padding:50px;"><canvas id="draw"></canvas></div>
+
+ <script src="./canvas_properties.js" type="text/javascript"></script>
+ <script src="./mouseDownFun.js" type="text/javascript"></script>
+ <script src="./draw.js" type="text/javascript"></script>
+ <script src="./Main.js" type="text/javascript"></script>
+ 
+</body>
+
+</html>
